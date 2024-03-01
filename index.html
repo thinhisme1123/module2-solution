@@ -4,8 +4,245 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
+    <style>
+        .grid {
+            width: 100%; 
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: -4px;
+            margin-right: -4px;
+        }
+
+        .col {
+            flex: 1; 
+            padding-left: 4px;
+            padding-right: 4px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px; 
+        }
+
+        .paragrapgh-container {
+            background-color: #999999;
+            margin-bottom: 20px; 
+            padding-top: 20px;
+           
+            border: 3px solid black;
+            position: relative;
+        }
+        .paragrapgh-container:nth-child(1) {
+            margin-right: 20px;
+        }
+        .paragrapgh-container:nth-child(2) {
+            margin-right: 20px;
+        }
+
+        .sub-title {
+            font-weight: 700;
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 30px;
+            width: 110px;
+            border-bottom: 2px solid black;
+            border-left: 2px solid black;
+            display: flex;
+        }
+
+        .sub-title h3{
+            margin: auto;
+        }
+    
+     
+@media (max-width: 768px) {
+    .row {
+        margin-left: -8px;
+        margin-right: -8px;
+    }
+
+    .col {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .m-0 {
+        display: none;
+    }
+
+    .m-1,
+    .m-2,
+    .m-3,
+    .m-4,
+    .m-5,
+    .m-6,
+    .m-7,
+    .m-8,
+    .m-9,
+    .m-10,
+    .m-11,
+    .m-12 {
+        display: block;
+    }
+
+    .m-1 {
+        flex: 0 0 8.33333%;
+        max-width: 8.33333%;
+    }
+
+    .m-2 {
+        flex: 0 0 16.66667%;
+        max-width: 16.66667%;
+    }
+
+    .m-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+
+    .m-4 {
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+    }
+
+    .m-5 {
+        flex: 0 0 41.66667%;
+        max-width: 41.66667%;
+    }
+
+    .m-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .m-7 {
+        flex: 0 0 58.33333%;
+        max-width: 58.33333%;
+    }
+
+    .m-8 {
+        flex: 0 0 66.66667%;
+        max-width: 66.66667%;
+    }
+
+    .m-9 {
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+
+    .m-10 {
+        flex: 0 0 83.33333%;
+        max-width: 83.33333%;
+    }
+
+    .m-11 {
+        flex: 0 0 91.66667%;
+        max-width: 91.66667%;
+    }
+
+    .m-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .m-o-1 {
+        margin-left: 8.33333%;
+    }
+
+    .m-o-2 {
+        margin-left: 16.66667%;
+    }
+
+    .m-o-3 {
+        margin-left: 25%;
+    }
+
+    .m-o-4 {
+        margin-left: 33.33333%;
+    }
+
+    .m-o-5 {
+        margin-left: 41.66667%;
+    }
+
+    .m-o-6 {
+        margin-left: 50%;
+    }
+
+    .m-o-7 {
+        margin-left: 58.33333%;
+    }
+
+    .m-o-8 {
+        margin-left: 66.66667%;
+    }
+
+    .m-o-9 {
+        margin-left: 75%;
+    }
+
+    .m-o-10 {
+        margin-left: 83.33333%;
+    }
+
+    .m-o-11 {
+        margin-left: 91.66667%;
+    }
+    
+    .row-container {
+        margin-left: 30px;
+        margin-right: 50px;
+    }
+
+
+}
+@media (max-width: 576px) {
+    
+    .c-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+
+    }
+
+    .row-container {
+        margin-left: 30px;
+        margin-right: 50px;
+    }
+    .paragrapgh-container:nth-child(1) {
+        width: 50%;
+    }
+    .paragrapgh-container:nth-child(2) {
+        width: 50%;
+    }
+    
+}
+    </style>
 </head>
 <body>
-    
+    <h1>Our Menu</h1>
+    <div class="grid">
+        <div class="row row-container">
+            <div class="paragrapgh-container col c-12">
+                <div class="sub-title" style="background-color: #d59898;"><h3>Chicken</h3></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet tristique purus. Ut consectetur elit id quam bibendum molestie. Praesent nec nisl quis turpis facilisis ultrices. Sed sodales, eros non ultricies rhoncus, lacus odio tincidunt felis, at pretium mauris nisi nec ante. Integer tortor augue, malesuada sed turpis vitae, consequat blandit est. Morbi vulputate enim velit, sed cursus elit cursus eget. Donec id mauris ac arcu fermentum imperdiet id commodo lectus.</p>
+            </div>
+            <div class="paragrapgh-container col c-12">
+                <div class="sub-title" style="background-color: #c14543; color:white;"><h3>Beef</h3></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet tristique purus. Ut consectetur elit id quam bibendum molestie. Praesent nec nisl quis turpis facilisis ultrices. Sed sodales, eros non ultricies rhoncus, lacus odio tincidunt felis, at pretium mauris nisi nec ante. Integer tortor augue, malesuada sed turpis vitae, consequat blandit est. Morbi vulputate enim velit, sed cursus elit cursus eget. Donec id mauris ac arcu fermentum imperdiet id commodo lectus.</p>
+            </div>
+            <div class="paragrapgh-container col c-12 m-12">
+                <div class="sub-title" style="background-color: #e5d198;"><h3>Sushi</h3></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet tristique purus. Ut consectetur elit id quam bibendum molestie. Praesent nec nisl quis turpis facilisis ultrices. Sed sodales, eros non ultricies rhoncus, lacus odio tincidunt felis, at pretium mauris nisi nec ante. Integer tortor augue, malesuada sed turpis vitae, consequat blandit est. Morbi vulputate enim velit, sed cursus elit cursus eget. Donec id mauris ac arcu fermentum imperdiet id commodo lectus.</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
