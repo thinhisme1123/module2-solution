@@ -61,37 +61,39 @@
         .sub-title h3{
             margin: auto;
         }
+        .paragrapgh-container:nth-of-type(1) .sub-title {
+            background-color: #d59898;
+        }
+        
+        .paragrapgh-container:nth-of-type(2) .sub-title {
+            background-color: #c14543;
+            color: white;
+        }
+        
+        .paragrapgh-container:nth-of-type(3) .sub-title {
+            background-color: #e5d198;
+        }
     
      
 @media (max-width: 768px) {
     .row {
         margin-left: -8px;
         margin-right: -8px;
+        display: flex; /* Add flexbox to make columns align horizontally */
+        flex-wrap: wrap;
     }
 
     .col {
         padding-left: 8px;
         padding-right: 8px;
+        flex: 0 0 100%; /* Each column occupies full width */
+        max-width: 100%;
     }
 
     .m-0 {
         display: none;
     }
 
-    .m-1,
-    .m-2,
-    .m-3,
-    .m-4,
-    .m-5,
-    .m-6,
-    .m-7,
-    .m-8,
-    .m-9,
-    .m-10,
-    .m-11,
-    .m-12 {
-        display: block;
-    }
 
     .m-1 {
         flex: 0 0 8.33333%;
@@ -153,55 +155,11 @@
         max-width: 100%;
     }
 
-    .m-o-1 {
-        margin-left: 8.33333%;
-    }
-
-    .m-o-2 {
-        margin-left: 16.66667%;
-    }
-
-    .m-o-3 {
-        margin-left: 25%;
-    }
-
-    .m-o-4 {
-        margin-left: 33.33333%;
-    }
-
-    .m-o-5 {
-        margin-left: 41.66667%;
-    }
-
-    .m-o-6 {
-        margin-left: 50%;
-    }
-
-    .m-o-7 {
-        margin-left: 58.33333%;
-    }
-
-    .m-o-8 {
-        margin-left: 66.66667%;
-    }
-
-    .m-o-9 {
-        margin-left: 75%;
-    }
-
-    .m-o-10 {
-        margin-left: 83.33333%;
-    }
-
-    .m-o-11 {
-        margin-left: 91.66667%;
-    }
-    
     .row-container {
         margin-left: 30px;
         margin-right: 50px;
     }
-
+    
 
 }
 @media (max-width: 576px) {
@@ -216,12 +174,7 @@
         margin-left: 30px;
         margin-right: 50px;
     }
-    .paragrapgh-container:nth-child(1) {
-        width: 50%;
-    }
-    .paragrapgh-container:nth-child(2) {
-        width: 50%;
-    }
+    
     
 }
     </style>
@@ -230,16 +183,16 @@
     <h1>Our Menu</h1>
     <div class="grid">
         <div class="row row-container">
-            <div class="paragrapgh-container col c-12">
-                <div class="sub-title" style="background-color: #d59898;"><h3>Chicken</h3></div>
+            <div class="paragrapgh-container col c-12 m-6">
+                <div class="sub-title" ><h3>Chicken</h3></div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet tristique purus. Ut consectetur elit id quam bibendum molestie. Praesent nec nisl quis turpis facilisis ultrices. Sed sodales, eros non ultricies rhoncus, lacus odio tincidunt felis, at pretium mauris nisi nec ante. Integer tortor augue, malesuada sed turpis vitae, consequat blandit est. Morbi vulputate enim velit, sed cursus elit cursus eget. Donec id mauris ac arcu fermentum imperdiet id commodo lectus.</p>
             </div>
-            <div class="paragrapgh-container col c-12">
-                <div class="sub-title" style="background-color: #c14543; color:white;"><h3>Beef</h3></div>
+            <div class="paragrapgh-container col c-12 m-6">
+                <div class="sub-title"><h3>Beef</h3></div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet tristique purus. Ut consectetur elit id quam bibendum molestie. Praesent nec nisl quis turpis facilisis ultrices. Sed sodales, eros non ultricies rhoncus, lacus odio tincidunt felis, at pretium mauris nisi nec ante. Integer tortor augue, malesuada sed turpis vitae, consequat blandit est. Morbi vulputate enim velit, sed cursus elit cursus eget. Donec id mauris ac arcu fermentum imperdiet id commodo lectus.</p>
             </div>
             <div class="paragrapgh-container col c-12 m-12">
-                <div class="sub-title" style="background-color: #e5d198;"><h3>Sushi</h3></div>
+                <div class="sub-title" ><h3>Sushi</h3></div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet tristique purus. Ut consectetur elit id quam bibendum molestie. Praesent nec nisl quis turpis facilisis ultrices. Sed sodales, eros non ultricies rhoncus, lacus odio tincidunt felis, at pretium mauris nisi nec ante. Integer tortor augue, malesuada sed turpis vitae, consequat blandit est. Morbi vulputate enim velit, sed cursus elit cursus eget. Donec id mauris ac arcu fermentum imperdiet id commodo lectus.</p>
             </div>
         </div>
